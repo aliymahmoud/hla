@@ -1,0 +1,33 @@
+invoice:{
+    code,
+    client_id,
+    employee_id,
+    branch_id,
+    insurance_company_id,
+    date,
+    notes,
+    payment_method_id,
+    paid,
+    total_price,
+    type,
+    invoice_code,
+}
+invoice_payment:{
+    invoice_id,
+    paid,
+    payee_id,
+    payee_type,
+}
+invoice_items:{
+    item_type,
+    item_id,
+    quantity,
+    discount,
+    if(item_type == glass_lens){
+        show(axles)
+    },
+}
+invoice_attachments:{
+    invoice_id,
+    attachment,
+}
